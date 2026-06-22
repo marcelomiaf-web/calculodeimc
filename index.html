@@ -315,7 +315,7 @@
       return;
     }
 
-    const imc = peso / (altura * altura);
+    const imc = peso / (altura**2);
     const cls = classificacoes.find(c => imc < c.max);
 
     document.getElementById('imc-value').textContent = imc.toFixed(2);
